@@ -1,0 +1,18 @@
+{
+    "emailSender.cls": {
+        "id": "01pf400000BuVj1AAF",
+        "name": "emailSender",
+        "createdDate": "2018-05-02T00:08:55.000+0000",
+        "createdById": "005f4000000cOsRAAU",
+        "namespacePrefix": null,
+        "lastModifiedById": "005f4000000cOsRAAU",
+        "lastModifiedDate": "2018-05-02T01:31:08.000+0000",
+        "fullName": "emailSender",
+        "fileName": "unpackaged/classes/emailSender.cls",
+        "createdByName": "Spencer Herms",
+        "lastModifiedByName": "Spencer Herms",
+        "manageableState": "unmanaged",
+        "type": "ApexClass",
+        "mmState": "clean"
+    }
+}

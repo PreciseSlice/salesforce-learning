@@ -1,0 +1,17 @@
+{
+    "projectName": "dev-playground",
+    "username": "slherms@gmail.com",
+    "id": "20588830-4d9c-11e8-b16c-691178718911",
+    "namespace": "",
+    "orgType": "developer",
+    "loginUrl": "https://login.salesforce.com/",
+    "instanceUrl": "https://na59.salesforce.com",
+    "workspace": "/Users/precise_device/Documents/salesforce",
+    "subscription": [
+        "ApexClass",
+        "ApexComponent",
+        "ApexPage",
+        "ApexTrigger",
+        "StaticResource"
+    ]
+}
