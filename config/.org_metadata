@@ -19,7 +19,30 @@
         "cls": "folder",
         "select": false,
         "expanded": false,
-        "children": []
+        "children": [
+            {
+                "createdById": "005f4000000cOsRAAU",
+                "createdByName": "Spencer Herms",
+                "createdDate": "2018-05-02T00:08:55.000Z",
+                "fileName": "classes/emailSender.cls",
+                "fullName": "emailSender",
+                "id": "ApexClass.emailSender",
+                "lastModifiedById": "005f4000000cOsRAAU",
+                "lastModifiedByName": "Spencer Herms",
+                "lastModifiedDate": "2018-05-02T01:31:08.000Z",
+                "manageableState": "unmanaged",
+                "type": "ApexClass",
+                "leaf": true,
+                "title": "emailSender",
+                "checked": false,
+                "text": "emailSender",
+                "cls": "",
+                "level": 2,
+                "isFolder": false,
+                "children": [],
+                "select": false
+            }
+        ]
     },
     {
         "id": "ApexComponent",

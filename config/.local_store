@@ -6,13 +6,29 @@
         "createdById": "005f4000000cOsRAAU",
         "namespacePrefix": null,
         "lastModifiedById": "005f4000000cOsRAAU",
-        "lastModifiedDate": "2018-05-02T01:31:08.000+0000",
+        "lastModifiedDate": "2018-05-04T02:18:54.000+0000",
         "fullName": "emailSender",
         "fileName": "unpackaged/classes/emailSender.cls",
         "createdByName": "Spencer Herms",
         "lastModifiedByName": "Spencer Herms",
         "manageableState": "unmanaged",
         "type": "ApexClass",
+        "mmState": "clean"
+    },
+    "child.trigger": {
+        "id": "01qf4000000SOyFAAW",
+        "name": "child",
+        "createdDate": "2018-05-04T00:23:51.000+0000",
+        "createdById": "005f4000000cOsRAAU",
+        "namespacePrefix": null,
+        "lastModifiedById": "005f4000000cOsRAAU",
+        "lastModifiedDate": "2018-05-04T02:20:18.000+0000",
+        "fullName": "child",
+        "fileName": "unpackaged/triggers/child.trigger",
+        "createdByName": "Spencer Herms",
+        "lastModifiedByName": "Spencer Herms",
+        "manageableState": "unmanaged",
+        "type": "ApexTrigger",
         "mmState": "clean"
     }
 }
