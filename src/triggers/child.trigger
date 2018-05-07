@@ -2,9 +2,7 @@ trigger child on child__c (after insert) {
   
   if (Trigger.isAfter && Trigger.isInsert) {
     emailParents();
-    // emailChildren(); built a thing to email the children
-    // add two fields onto the parent object to send to the children income, enertainment systems, strictness.
-    // contact only the child which was inserted into the database
+    emailChild();
   }
 
   private String[] parentAddresses() {
@@ -12,6 +10,16 @@ trigger child on child__c (after insert) {
     String[] emails = new String[] {};
     for(parent__c parent : parents) {
       emails.add(parent.email__c);
+    }
+
+    return emails;
+  }
+
+  private String[] childAddresses() {
+    child__c[] children = [SELECT email__c FROM child__c];
+    String[] emails = new String[] {};
+    for(child__c child : children) {
+      emails.add(child.email__c);
     }
 
     return emails;
@@ -25,9 +33,13 @@ trigger child on child__c (after insert) {
     return child.Name + ' has ' + child.Hair_Color__c + ' hair and benches ' + child.Bench_Weight__c + ' pounds.';
   } 
 
+  private String parentInfo(Parent__c parent) {
+    return parent.Name + ' has ' + parent.Game_System__c + ' Gaming systems and bed time is at' + parent.Bed_Time__c; 
+  }
+
   private void emailParents() {
     String[] parentAddresses = parentAddresses();
-    String subject = 'New Children';
+    String subject = 'New Children!';
     String body = 'Look at all these kids: \n';
 
     for(child__c child : Trigger.new) {
@@ -35,8 +47,19 @@ trigger child on child__c (after insert) {
     }
 
     emailSender.sendEmail(parentAddresses, null, subject, body);
+  }
 
-  }  
+  private void emailChild() {
+    // String[] childAddresses = childAddresses();
+    // String subject = 'New Parents!';
+    // String body = 'Look at these new parents: \n';
+
+    // for(parent__c parent : Trigger.new) {
+    //   body += parentInfo(parent) + '\n';
+    // }
+
+    // emailSender.sendEmail(childAddresses, null, subject, body);
+  }
 }
 
 // in console
