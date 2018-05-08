@@ -1,0 +1,29 @@
+  <!-- Create the page so that the user selects child or parent on landing then go to the page for the user type. -->
+<apex:page controller="kids_inc" showHeader="false" sidebar="false">
+  <apex:repeat value="{!parents}" var="parent_element">
+    <div>
+      <apex:outputField value="{!parent_element.name}"/>
+      <apex:outputField value="{!parent_element.Bed_Time__c}"/>
+    </div>
+    <br/>
+  </apex:repeat>
+
+  <apex:form>
+    <apex:outputPanel id="parent">
+      <apex:outputLabel for="name" value="name"/>
+        <apex:inputField id="name" value="{!parent.name}"/>
+        <apex:inputField value="{!parent.email__c}"/>
+        <apex:inputField value="{!parent.Bed_Time__c}"/>
+        <apex:inputField value="{!parent.Desired_Hair_Color__c}"/>
+        <apex:inputField value="{!parent.Desired_Strength__c}"/>
+        <apex:inputField value="{!parent.Game_System__c}"/>
+        <apex:inputField value="{!parent.Type__c}"/>
+    </apex:outputPanel>
+    <apex:commandButton action="{!saveParent}" value="Save Parent" reRender="output"/>
+  </apex:form>
+  <apex:outputPanel id="output">
+    <apex:outputPanel rendered="{!!isBlank(parent.id)}">
+      <h2>{!message}</h2>
+    </apex:outputPanel>
+  </apex:outputPanel>
+</apex:page>

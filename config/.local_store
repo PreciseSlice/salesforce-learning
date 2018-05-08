@@ -46,5 +46,37 @@
         "manageableState": "unmanaged",
         "type": "ApexTrigger",
         "mmState": "clean"
+    },
+    "kids_inc.page": {
+        "id": "066f4000002HyGQAA0",
+        "name": "kids_inc",
+        "createdDate": "2018-05-08T00:13:35.000+0000",
+        "createdById": "005f4000000cOsRAAU",
+        "namespacePrefix": null,
+        "lastModifiedById": "005f4000000cOsRAAU",
+        "lastModifiedDate": "2018-05-08T02:23:11.000+0000",
+        "fullName": "kids_inc",
+        "fileName": "unpackaged/pages/kids_inc.page",
+        "createdByName": "Spencer Herms",
+        "lastModifiedByName": "Spencer Herms",
+        "manageableState": "unmanaged",
+        "type": "ApexPage",
+        "mmState": "clean"
+    },
+    "kids_inc.cls": {
+        "id": "01pf400000BwuFcAAJ",
+        "name": "kids_inc",
+        "createdDate": "2018-05-08T00:31:44.000+0000",
+        "createdById": "005f4000000cOsRAAU",
+        "namespacePrefix": null,
+        "lastModifiedById": "005f4000000cOsRAAU",
+        "lastModifiedDate": "2018-05-08T02:11:58.000+0000",
+        "fullName": "kids_inc",
+        "fileName": "unpackaged/classes/kids_inc.cls",
+        "createdByName": "Spencer Herms",
+        "lastModifiedByName": "Spencer Herms",
+        "manageableState": "unmanaged",
+        "type": "ApexClass",
+        "mmState": "clean"
     }
 }
