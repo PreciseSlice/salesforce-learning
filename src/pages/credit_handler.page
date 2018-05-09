@@ -1,0 +1,53 @@
+<apex:page controller="authorize_net" showHeader="true" sidebar="true" docType="html-5.0">
+  <apex:slds />
+  <div class="slds-scope">
+    <h1>Credit Card Payment Info</h1>
+    <apex:form id="paymentform" styleClass="paymentform">
+      <br/>
+      <div>
+        <label> First Name  
+          <apex:input value="{!transaction_details.first_name}" styleClass="slds-input" />
+        </label>
+      </div>
+      <br/>
+      <div>
+        <label> Last Name  
+          <apex:input value="{!transaction_details.last_name}" styleClass="slds-input" />
+        </label>
+      </div>
+      <br/>
+      <div>
+        <label> Email  
+          <apex:input value="{!transaction_details.email}" styleClass="slds-input" />
+        </label>
+      </div>
+      <br/>
+      <div>
+        <label> cc_number  
+          <apex:input value="{!transaction_details.cc_number}" styleClass="slds-input" />
+        </label>
+      </div>
+      <br/>
+      <div>
+        <label> expMonth  
+          <apex:input value="{!transaction_details.exp_month}" styleClass="slds-input" />
+        </label>
+      </div>
+      <br/>
+      <div>
+        <label> expYear  
+          <apex:selectList value="{!transaction_details.exp_year}" required="true" size="1">
+          <apex:selectOptions  value="{!Exp_years}"/>
+          </apex:selectList>
+        </label>
+      </div>
+      <br/>
+      <div>
+        <label> CCV  
+          <apex:input value="{!transaction_details.ccv}" />
+        </label>
+      </div>
+
+    </apex:form>
+  </div>
+</apex:page>
